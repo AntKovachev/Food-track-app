@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/authroutes.js');
 const foodRoutes = require('./routes/foodRoutes.js');
+const cors = require('cors');
 
 dotenv.config();
 
@@ -10,6 +11,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
+app.use(cors()); // Allow all origins
 
 // MongoDB connection
 mongoose
