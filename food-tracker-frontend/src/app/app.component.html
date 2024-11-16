@@ -1,0 +1,20 @@
+<div>
+  <h1>Welcome to Food Tracker</h1>
+
+  <!-- Register Form -->
+  <h2>Register</h2>
+  <input [(ngModel)]="name" placeholder="Name" />
+  <input [(ngModel)]="email" placeholder="Email" />
+  <input [(ngModel)]="password" placeholder="Password" type="password" />
+  <button (click)="register()">Register</button>
+
+  <!-- Login Form -->
+  <h2>Login</h2>
+  <input [(ngModel)]="email" placeholder="Email" />
+  <input [(ngModel)]="password" placeholder="Password" type="password" />
+  <button (click)="login()">Login</button>
+
+  <!-- Fetch Foods -->
+  <h2>Foods</h2>
+  <button (click)="fetchFoods()">Get Foods</button>
+</div>
